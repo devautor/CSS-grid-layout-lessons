@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Line-based placements</title>
+        <link rel="stylesheet" type="text/css" href="line-based-placement.css">
+    </head>
+    <body> 
+        <div class="wrapper">
+            <div class="header"><h3>Line-based placement</h3></div>
+          <div class="box1">Grid lines are numbered for columns and rows, and are indexed from 1.</div>
+            <div class="">Shorthand</div>   
+          <div><b>grid-column</b> is a shorthand for <em>grid-column-start and grid-column-end</em> properties and <b>grid-row</b> is a shorthand for <em>grid-row-start and grid-row-end</em> properties.</div>
+            <div>Defualt spans</div>
+            <div>Grid defaults to spanning one track. So, if an item only spans one track you can omit the grid-column-end or grid-row-end value.</div>
+            <div>grid-area property</div>
+            <div>Each area can be defined with grid-area property alone, suing this order:
+              <ul>
+                <li>grid-row-start</li>
+                <li>grid-column-start</li>
+                <li>grid-row-end</li>
+                <li>grid-column-end</li>
+              </ul>
+              <hr>
+              This order is due to grid using the flow-relative directions defined in the CSS Writing Modes specification. We have the concept of four flow-relative directions:
+              <ul>
+                <li>block-start</li>
+                <li>block-end</li>
+                <li>inline-start</li>
+                <li>inline-end</li>
+              </ul>
+          </div>
+            <div id="countBackCol1">Counting backwards</div>
+            <div id="countBackCol2">Final line can be addressed as -1. [Isn't this CSS Pythonic? - NO, Focus man!!] 
+            <br><b>NOTE</b> that <b>it is the final line of the explicit grid</b>, that is, the grid defined by grid-template-columns and grid-template-rows, and does not take into account any rows or columns added in the implicit grid outside of that.</div>
+            <div>Gutters</div>
+            <div>Gaps only appear between column &amp; row tracks of the grid. They are like thick lines, and they do not add space to the top and bottom, left or right of the container. (Use padding style with grid container for that effect) 
+              <hr>Watch size of this row: it has been implicitly adjusted by the grid (from 0.5fr), due to its content size.
+            </div>
+            <div>Span keyword</div>
+            <div>It specifies the number of tracks you would like the area to span, from a start line.
+            <hr>
+              The last row is created implicitly by the grid.
+            </div>
+            <div id="last-row">I am implicit too (like "Counting backwards" row!!!)</div>
+        </div>
+    </body>
+</html>

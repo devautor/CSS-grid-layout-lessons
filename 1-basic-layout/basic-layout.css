@@ -1,0 +1,26 @@
+.wrapper {
+  display: grid;
+  grid-gap: 5px;    /* gutter: you cannot place anything into a gap; it acts like a fat line w.r.t line-based positioning */
+}
+
+/* Old gold CSS things */
+* {box-sizing: border-box;}
+
+.wrapper {
+  padding: 10px;
+  border: 3px solid #000000;
+  border-radius: 5px;
+  background-color: #aabbcc;
+}
+
+.wrapper > div {
+  border: 2px solid #000000;
+  border-radius: 7px;
+  background-color: #ffaabb;
+  padding: 1em;
+  color: #000000;
+}
+
+a{
+  color: #000000;
+}
