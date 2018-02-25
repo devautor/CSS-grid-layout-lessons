@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid template areas</title>
+        <link rel="stylesheet" type="text/css" href="template-areas.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+              <h3 class="nested-row  nested-row-1">Nested grid layout</h3>
+                <div class="nested-row nested-row-2">Named grid areas can also be used for placing items on the grid.</div>
+                <div class="nested-row nested-row-3">Define a named area and then specify the location of that area in the value of the <b>grid-template-areas</b> property. (See my positioning)</div>
+              <div class="nested-row nested-row-4">Line-based and named grids styles can be mixed!</div>
+          </div>
+
+            <div class="sidebar">In named areas method, every placement can be specified in the grid container, without touching individual items. 
+            <hr>
+              <mark>This enables to to make changes at different breakpoints using media queries.</mark>
+            </div>
+            <div class="content">Constraints:
+              <ul>
+                <li>a grid area can only be rectangular (yup, no making Ls)</li>
+                <li>grid-template-areas must have the same number of cells for each row (leave empty with a dot!)</li>
+              </ul>
+              </div>
+          <div class="footer">Named areas makes it very simple to define different grid layouts on different media query breakpoints. Test the responsiveness of this page's layout vs. it size.</div>
+            <div class="backButton">Back</div>
+            <div class="nextButton">Next</div>
+        </div>
+    </body>
+</html>
